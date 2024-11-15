@@ -1,0 +1,94 @@
+.parent {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTStSMv9J0DOeTMmQ2OzbYYQnHhm84zsXSlZQ&s);
+    background-origin: padding-box;
+    border: 2px dashed red;
+    height: 500px;
+    background-position: bottom;
+    text-align: center;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    padding: 20px 20px 20px 20px;
+
+}
+
+.child {
+    border-radius: 70px;
+
+}
+
+.child1 {
+    border-block: solid;
+    border-block-color: blue;
+}
+
+
+.border {
+    border-block-end: 1rem solid green;
+    writing-mode: horizontal-tb;
+
+}
+
+.left-radius {
+    border-bottom-left-radius: 40px;
+    background-color: lightsalmon;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.border-bottom {
+
+    border: 2px solid rgb(79, 24, 137);
+    width: 1000px;
+    height: 100px;
+    text-align: center;
+    border-bottom-style: dotted;
+    border-image-repeat: repeat;
+}
+
+.bordered {
+    width: 25rem;
+    height: 25rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 40px solid;
+    border-image: url(https://media.istockphoto.com/id/1413867157/video/floral-frame-with-many-leaves-and-flowers-around-the-border.jpg?s=640x640&k=20&c=_fHdRq-NG2uKtVdyZL5J9nwO8UlfaLrqo4zfnBZ_byQ=)27;
+    text-align: center;
+    border-image-repeat: stretch;
+
+}
+
+.brightness {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSocPH9K9CdtYHKGF7EGJ-GKu4TZ7h8w3I_4kYU8nCJIA-vFc01kwToyx0-EPO1T4ihJ_CXEkNT26EpVe_96CyzDjvL7X9GhXduoUZ104o);
+    border: 2px solid black;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    filter: brightness(50%);
+
+}
+
+.orgin {
+    border: 10px solid red;
+    border: 10px 10px 10px 10px;
+    padding: 10px;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/61c4da8eb1b30a201b9669f2/e2e0e62f-0064-4f86-b9d8-5a55cb7110ca/Korembi-January-2024.jpg);
+    text-align: center;
+    background-position: center right;
+    background-origin: border-box;
+    background-position-x: right;
+    height: 300px;
+    width: 300px;
+
+}
+.attachment{
+    background-image: url(https://t4.ftcdn.net/jpg/07/10/82/17/360_F_710821781_R8VGPBrV55dd8HTA0JVVC4f9ZRwwpUAg.jpg);
+    height: 300px;
+    width: 300px;
+    background-position-x: center;
+    margin: 50px 500px 50px 500px;
+    background-attachment:fixed;
+    
+    
+
+}

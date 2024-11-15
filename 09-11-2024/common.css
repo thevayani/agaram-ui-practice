@@ -1,0 +1,11 @@
+/*1-html*/
+body{
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,255,0.5),rgba(255,255,0,0.5)),url("https://freebiehive.com/wp-content/uploads/2024/03/Flowers-PNG-758x473.jpg");
+
+}
+/*bgposition-html*/
+.position{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDCsqRYLAFDdL4Ix_AHai7kNVyoPV9Ssv1xg&s");
+
+}

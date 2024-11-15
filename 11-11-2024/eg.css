@@ -1,0 +1,36 @@
+.head{
+    
+    background-color: red;
+    height: 50px;
+    position: sticky;
+    top: 0px;
+    bottom: 0px;
+    
+    
+}
+.box1{
+    border: 1px solid black;
+    background-color: blueviolet;
+    height: 1000px;
+    width: 500px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    margin-top: 55px;
+    
+}
+.box{
+    
+    width: 1000px; ;
+    
+}
+
+h1{
+    position: sticky;
+    top: 50;
+}
+    
+    
+    
+    
+    

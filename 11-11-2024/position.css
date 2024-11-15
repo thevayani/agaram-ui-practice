@@ -1,0 +1,41 @@
+.main{
+    border:2px solid red;
+    width: 400px;
+    height: 300px;
+    
+}
+.child{
+    border: 1px solid blue;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+
+}
+.container{
+    border:5px solid black;
+    width: 700px;
+    height: 500px;
+    
+
+
+}
+.main1{
+    border:2px solid red;
+    width: 400px;
+    height: 300px;
+
+}
+.child1{
+    border: 1px solid blue;
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+
+}
+
+
+

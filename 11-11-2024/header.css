@@ -1,0 +1,14 @@
+.heading{
+    border: 1px solid black;
+    background-color: blueviolet;
+    height: 100px;
+    width: 700px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    
+
+}
+.para{
+    margin-top: 100px;
+}
