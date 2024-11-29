@@ -63,3 +63,45 @@ else{
   console.log("check the input")
 }
 
+//question 12
+let month=[{name:"january",
+  days:31},
+ {name:"feb",
+  days:28
+  },
+ {name:"mar",
+  days:31
+  },
+ {name:"apr",
+  days:30
+  },
+ {name:"may",
+  days:31
+  },
+ {name:"jun",
+  days:30
+  },
+ {name:"jul",
+  days:31
+  },
+ {name:"aug",
+  days:31
+  },
+ {name:"sep",
+  days:30
+  },
+ {name:"oct",
+  days:31
+  },
+ {name:"nov",
+  days:30
+  },
+ {name:"dec",
+  days:31
+  },
+]
+
+console.log(month[t1-1].days)
+
+
+
