@@ -11,14 +11,17 @@ else{
 
 //question 2
 let n1=85;
-let n2=65;
+let n2=95;
 let n3=87;
 
-if(n1>n2 || n2>n3 || n1<n3 || n2>n1){
-  console.log("maximum valiue");
+if(n1>=n2 && n1>=n3){
+  console.log("n1maximum valiue");
+}
+else if(n2>=n3 && n2>=n1){
+  console.log(" n2, maximum value");
 }
 else{
-  console.log("not maximum value");
+  console.log("n3 maximum value")
 }
 
 //qustion 3
@@ -156,3 +159,87 @@ else{
   console.log("scalane")
 }
 
+let amount=3750;
+if(amount>=500){
+  let notes=Math.floor(amount/500);
+  console.log("500 count note is"+notes)
+  amount=amount%500;
+  
+}
+
+if(amount>=200){
+  let notes=Math.floor(amount/200);
+  console.log("200 count note is"+notes)
+  amount=amount%200;
+  
+}
+  
+if(amount>=100){
+  let notes=Math.floor(amount/100);
+  console.log("100 count note is"+notes)
+  amount=amount%100;
+  
+}  
+
+if(amount>=50){
+  let notes=Math.floor(amount/50);
+  console.log("50 count note is"+notes)
+  amount=amount%50;
+  
+}
+
+if(amount>=10){
+  let notes=Math.floor(amount/10);
+  console.log("10 count note is"+notes)
+  amount=amount%10;
+  
+}
+
+//question 21
+  
+let unit=160;
+let price=0;
+
+if(unit>250){
+ price=25+75+120+(unit-250)*1.5
+}
+else if(unit>150){
+ price=25+75+(unit-150)*1.2
+} 
+
+else if(unit>100){
+ price=25+(unit-50)*0.75
+}
+
+else if(unit>50){
+ price=25+(unit-50)*0.75
+}
+
+else {
+ price=unit*0.5
+}
+
+let surcharge=price*20/100;
+
+console.log(surcharge);
+
+//question 20
+
+let basic_salary=17000;
+let hra=0;
+let da=0;
+if(basic_salary<=10000){
+  hra=20;
+  da=80;
+  
+}
+else if(basic_salary<=20000){
+  hra=25;
+  da=90;
+}
+
+
+let hra_amt=basic_salary*hra/100;
+  let da_amt=basic_salary*da/100;
+  let final=basic_salary+hra_amt+da_amt;
+  console.log(final)    
