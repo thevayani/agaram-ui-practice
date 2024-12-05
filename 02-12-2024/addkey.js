@@ -103,5 +103,17 @@ let number=[2,3,5,6,7,8]
  number=tmp
  console.log(number)
 
- 
-   
+ //qus 6
+let word="hello";
+let tem=[];
+for(let sent in word){
+  tem.push(word[word.length-(parseInt(sent)+1)])
+}
+console.log(tem)
+
+
+let x=5;
+for(let i=1; i<=10; i++){
+let mul=x*i;
+  console.log(i+"*"+x+"="+mul);
+  }

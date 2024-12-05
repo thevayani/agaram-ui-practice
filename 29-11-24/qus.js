@@ -159,6 +159,8 @@ else{
   console.log("scalane")
 }
 
+
+//question 13
 let amount=3750;
 if(amount>=500){
   let notes=Math.floor(amount/500);

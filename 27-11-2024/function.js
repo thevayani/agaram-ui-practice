@@ -11,7 +11,7 @@ function printmyname(){
   }
   printname("arthi")
   
-  
+  //
   function addnumber(x,y){
     let sum=x+y
     console.log(sum)
@@ -19,7 +19,9 @@ function printmyname(){
   }
   addnumber(2,3)
   addnumber(5,6)
-  
+
+
+  //
   function find(x,y,z,q){
     let sum=x+y
     let multiply=z*q
@@ -29,13 +31,14 @@ function printmyname(){
   }
   find(1,2,3,4)
   
-  
+  //
   function fullname(x,y){
   let sum=x+y
   console.log(sum)
   }
   fullname("agaram","academy")
-  
+
+  //
   let detail={
     fname:"thevayani",
     lname:"i"
@@ -46,7 +49,7 @@ function printmyname(){
   getfullname(detail)
   
   
-  
+  //
   let name={
     fname:"thevayani",
     lname:"i"
@@ -58,7 +61,7 @@ function printmyname(){
   }
   getfullsentence(name,colors);
   
-  
+  //
   function addition(name1,name2)
   {
     return name1+name2;
@@ -67,7 +70,7 @@ function printmyname(){
   let total2=addition(8,16);
   console.log(total1+total2)
   
-  
+  //
   function addition(num1,num2)
   {
     return num1+num2;
@@ -85,7 +88,7 @@ function printmyname(){
   let solve3=sub(solve1,solve2);
   console.log(solve3)
   
-  
+ // 
  let mathsmark=55; 
   if(mathsmark>60){ 
     console.log("you are pass") 
@@ -95,6 +98,8 @@ function printmyname(){
       console.log("you are fail") 
     } 
 
+
+   // 
   let gender="female"; 
   if (gender=="female"){ 
     console.log("color is pink")
@@ -106,7 +111,7 @@ function printmyname(){
       console.log("color is red") 
     } 
 
-
+  // 
   let number=6; 
   let result=number%2 
   if(result==0){ 
@@ -115,7 +120,8 @@ function printmyname(){
   else{ 
     console.log("number is add") 
   } 
-     
+   
+  //
   let marks={ 
     m:90, 
     t:80, 
@@ -135,4 +141,22 @@ function printmyname(){
     cosole.log("you are not eligible") 
   } 
   
+  // OR
+  let per=marks.t+marks.e+marks.m+marks.sc+marks.so
+let total=per/5
+if(result>60){
+  console.log("you are eligible");
   
+}
+else{
+  console.log("you are not eligible");
+}
+
+function add(x,y,z){
+  return x+y+z
+  }
+
+
+let final=add("hai","new","world");
+console.log(final);
+
