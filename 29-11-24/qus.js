@@ -15,7 +15,7 @@ let n2=95;
 let n3=87;
 
 if(n1>=n2 && n1>=n3){
-  console.log("n1maximum valiue");
+  console.log("n1maximum value");
 }
 else if(n2>=n3 && n2>=n1){
   console.log(" n2, maximum value");

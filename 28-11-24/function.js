@@ -65,7 +65,7 @@ else{
 
 //question 12
 let month=[{name:"january",
-  days:31},
+            days:31},
  {name:"feb",
   days:28
   },

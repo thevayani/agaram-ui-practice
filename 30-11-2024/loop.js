@@ -57,34 +57,8 @@ let students=[
   for(let each of students){
    console.log(each.name)
   }
-  let students=[
-    {
-      name:"stu1",
-       age:20,
-      marks:[40,80,100,80,50],
-    },
-     
-    {
-      name:"stu2",
-      age:25,
-      marks:[100,80,70,60,50],
-    },
-                
-     {
-       name:"stu3",
-        age:29,
-       marks:[80,80,70,60,50]
-     }
-    ]
   
-  let value=0;
   
-  for(let each of students){
-    for(let n of each.marks){
-      value=value+n;
-    }
-    console.log(value);
-  }
   
   
   

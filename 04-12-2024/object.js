@@ -51,15 +51,7 @@ for(let i=6; i>=-59; i--){
   }
   
   
-  let num=0
-  for(let i=2; i<=5; i++ ){
-    num=num%i;
-    if(num>=2 && num<=5){
-      console.log("prime")
-    }
-  }
-  console.log(num)
-
+ 
   //qus 2
 
 for(let i=1; i<=20; i++){
@@ -130,20 +122,30 @@ for(let n of num){
       count=count+1;
     }
   }
-  
-
-if(count>1){
-    console.log(n+ "isduplicate")
-}
+  if(count>1){
+      console.log(n+ "isduplicate")
+  }
 }
 
 // qus 9
 
 
 let value=5
-let star="\n";
-for(let i=1; i<=value; i++){
-  for(let j=1; j<=i; j++){
+let star="\n";                       //"
+for(let i=1; i<=value; i++){             *
+  for(let j=1; j<=i; j++){               **
+    star=star+"*"                         "    
+  }
+  star=star+"\n"
+}
+console.log(star)
+
+
+let value=5
+let star="\n";                        //"
+                                         ***** 
+for(let i=5; i>=1; i--){                 ****
+  for(let j=1; j<=i; j++){               ***
     star=star+"*"
   }
   star=star+"\n"

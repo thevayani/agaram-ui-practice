@@ -107,9 +107,18 @@ let number=[2,3,5,6,7,8]
 let word="hello";
 let tem=[];
 for(let sent in word){
-  tem.push(word[word.length-(parseInt(sent)+1)])
+  tem.push(word[word.length-(parseInt(sent)+1)])   //"o","l","l","e","h"
 }
 console.log(tem)
+
+
+let word="hello";
+let tem="";
+for(let sent in word){
+  tem=tem+(word[word.length-(parseInt(sent)+1)])      //"olleh"
+}
+console.log(tem)
+
 
 
 let x=5;
