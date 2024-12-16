@@ -9,7 +9,7 @@ const database = getDatabase(app);
 const userListInDB = ref(database, "users");
 
 
-const idEL = document.querySelector("#id");
+const idEL =  document.querySelector("#id");
 const nameEL = document.querySelector("#name");
 const ageEL = document.querySelector("#age");
 const cityEL = document.querySelector("#city");
