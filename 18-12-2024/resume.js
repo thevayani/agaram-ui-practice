@@ -75,11 +75,12 @@ push(intialDb,
     function display() {
       let list = [];
       onValue(intialDb, (snapshot) => {
-        const data = snapshot.val();
        
-        let userArray = Object.entries(data);     //obj to array
         let trs = "";
-        let index = 1;
+        if(snapshot.exists()){
+          const data = snapshot.val();
+          let userArray = Object.entries(data);     //obj to array
+          let index = 1;
         for (let each of userArray) {
           trs = trs + `<tr>
                         <td>${index}</td>
@@ -94,6 +95,7 @@ push(intialDb,
           index = index + 1;
           
         }
+      }
         document.getElementById("tbody").innerHTML = trs;
       });
     
