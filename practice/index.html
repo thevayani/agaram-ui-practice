@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./main1.js"  type="module"></script>
+</head>
+<body>
+    <h3>details</h3>
+    <form >
+    <div>
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="fill the name"/>
+    </div>
+    <div>
+        <label for="age">Age</label>
+        <input type="text" id="age" placeholder="fill the age"/>
+        </div>
+        <!-- <div>
+            <label for="city">City</label>
+            <input type="text" id="city" placeholder="fill the city"/>
+            </div> -->
+             <input type="button" id="submit" onclick="createResume()" value="Submit">
+    </form>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>sl.no</th>
+                        <th>name</th>
+                        <th>age</th>
+                       
+                        <th>edit</th>
+                        <th>delete</th>
+                    </tr>
+                </thead>
+                    <tbody id="tBody">
+                        
+                    </tbody>
+                
+            </table>
+<div>
+    <input type="hidden" id="update_id" />
+    <input type="text" id="update_name"/>
+    <input type="text" id="update_age"/>
+
+    <button onclick="updateResume()">Update</button>
+</div> 
+
+</body>
+</html>

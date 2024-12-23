@@ -7,7 +7,7 @@ let resume = {
     certification:[],
     work_experience:[],
     language_known:[],
-    u_name:[],
+    name:[],
     place:[],
     objective:[],
     date:[]
@@ -44,11 +44,11 @@ import { getDatabase, ref,onValue, push,remove,set, get, child } from "https://w
 
 // document.getElementById("submit").addEventListener('click', function(e) {
 //     e.preventDefault();
-    // set(ref(db, 'user/' + document.getElementById("u_name").value),
+//     set(ref(db, 'user/' + document.getElementById("u_name").value),
 
 push(intialDb,
         {
-            name: resume?.u_name,
+            name: resume?.name,
             place: resume?.place,
             objective: resume?.objective,
             date: resume?.date,
@@ -71,6 +71,7 @@ push(intialDb,
     }
 
     window.createresume=createresume;
+    
 
     function display() {
       let list = [];
@@ -82,12 +83,12 @@ push(intialDb,
           let userArray = Object.entries(data);     //obj to array
           let index = 1;
         for (let each of userArray) {
+          console.log(each)
           trs = trs + `<tr>
                         <td>${index}</td>
                         <td>${each[1].name}</td>
-                        <td>${JSON.parse(each[1].personal_details).email}</td>
                         <td>
-                        <button>edit</button>
+                        <button onclick='editResume("${each[0]}",${JSON.stringify(each[1])})'>edit</button>
                         <button onclick="delateResume('${each[0]}')">delete</button>
                         </td>
     
@@ -109,16 +110,48 @@ push(intialDb,
     function delateResume(id){
         let data =ref(db,`${tblName}${id}`);  
         remove(data);
-        
-
-
-    }
+        }
 
     window.delateResume=delateResume;
+
+
+
+    function editResume(id,data){
+      console.log(data.name)
+      document.getElementById('email').value = data.email;
+      document.getElementById('update_name').value = data.name;
+      
+    }
+    window.editResume=editResume;
+    
+
+
+    function updateResume(){
+      let u_name = document.getElementById('update_name').value;
+      let id = document.getElementById('update_id').value;
+      set(ref(db,'user/'+id),{
+        name: name,
+        place: "",
+        objective:"",
+        date: "",
+        education:"",
+        certification:"",
+        project:"",
+        work:"",
+        skills:"",
+        hobbies:"",
+        personal_details:"",
+        language_known:""
+
+      })
+      display()
+    }
+
     
     
+    window.updateResume=updateResume;
     
-    
+  
 
 
 function addValue(e, key, p_key) {

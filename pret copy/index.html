@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js" type="module"></script>
+
+</head>
+<body>
+    <h3>UserDetails</h3>
+    <form>
+        <div>
+            <label for = "name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name"/>
+        </div>
+        <div>
+            <label for = "age">Age</label>
+            <input type="text" id="age" placeholder="Enter your age"/>
+        </div>  
+        <div>
+            <label for = "city">City</label>
+            <input type="text" id="city" placeholder="Enter your age"/>
+        </div>
+        <button onclick=""  id="submit" onclick=createresume()>Save</button>
+    </form>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>S.no</th>
+                <th>Name</th>
+                <th>Age</th>
+               
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="tbBody">
+           
+        </tbody>
+    </table>
+</body>
+</html>
