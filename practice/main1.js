@@ -44,7 +44,7 @@ const appSetting = {
         let userArray=Object.entries(data);
         let index=1;
         for(let each of userArray){
-          console.log(each)
+          //console.log(each)
           trs = trs+`<tr>
                            <td>${index}</td>
                            <td>${each[1].Name}</td>
