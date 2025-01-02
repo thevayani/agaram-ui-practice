@@ -7,6 +7,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <script src="resume.js" type="module"></script>
+
 
 
     <style>
@@ -19,14 +21,14 @@
 </head>
 
 <body>
-    <h1 class="text-center">Resume Details</h1>
+    <h1 class="text-center">Resume Details</h1>  
     <div class="container bg-danger-subtle p-5">
 
-        <div class="container">
+        <div class="container" >
             <div class="mb-3 row">
                 <label for="name" class="col-sm-2 col-form-label">Name:</label>
                 <div class="col-sm-5">
-                    <input type="text" class="form-control" onkeyup="addValue(this,'name',null)" />
+                    <input type="text" class="form-control" onkeyup="addValue(this,'name',null)"/>
                 </div>
             </div>
 
@@ -61,7 +63,7 @@
             <div class="mb-3 row">
                 <label for="name" class="col-sm-2 col-form-label">DOB:</label>
                 <div class="col-sm-5">
-                    <input type="Date" class="form-control"  onkeyup="addValue(this,'DOB','personal_details')">
+                    <input type="Date"     class="form-control"  onkeyup="addValue(this,'dob','personal_details')">
 
                 </div>
             </div>
@@ -93,8 +95,8 @@
 
                     <div class="col-5 mb-5 ">
                         <div class="">
-                            <textarea class="form-control" rows="5" placeholder="Enter Your Address"
-                                onkeyup="addValue(this,'Address','personal_details')" id="floatingTextarea"></textarea>
+                <textarea class="form-control"   rows="5" placeholder="Enter Your Address"
+                 onkeyup="addValue(this,'address','personal_details')" id="floatingTextarea"></textarea>
 
                         </div>
                     </div>
@@ -147,7 +149,7 @@
             <h5>Language Known:</h5>
             <div class="row m-3">
                 <div class="col-4">
-                    <input type="text"  placeholder="Enter language" />
+                    <input type="text"   id="language_known"   placeholder="Enter language" />
                     <button onclick="addArrayValue('language_known')">Add</button>
                 </div>
 
@@ -186,7 +188,7 @@
             <h5>Skills:</h5>
             <div class="row m-3">
                 <div class="col-4">
-                    <input type="text"  placeholder="Enter skills" />
+                    <input type="text"  id="skills"      placeholder="Enter skills" />
                     <button onclick="addArrayValue('skills')">Add</button>
                 </div>
 
@@ -196,7 +198,7 @@
             <h5>Hobbies:</h5>
             <div class="row m-3">
                 <div class="col-4">
-                    <input type="text" placeholder="Enter hobbies" />
+                    <input type="text" id="hobbies"        placeholder="Enter hobbies" />
                     <button onclick="addArrayValue('hobbies')">Add</button>
                 </div>
 
@@ -239,12 +241,12 @@
                         placeholder="enter institute Name">
                 </div>
                 <div class="col-2">
-                    <input type="number" id="year" class="form-control" aria-describedby="passwordHelpInline"
+                    <input type="number" id="year1" class="form-control" aria-describedby="passwordHelpInline"
                         placeholder="enter Year">
                 </div>
                 <div class="col-3">
                     <button
-                        onclick="addMultiValue('certification','certification_name','institute_name','year')">Add</button>
+                        onclick="addMultiValue('certification','certification_name','institute_name','year1')">Add</button>
                 </div>
             </div>
 
@@ -254,16 +256,17 @@
                     <input type="text" id="title" class="form-control" aria-describedby="passwordHelpInline"
                         placeholder="enter title">
                 </div>
+               
                 <div class="col-3">
-                    <input type="text" id=" company_name" class="form-control" aria-describedby="passwordHelpInline"
-                        placeholder="enter company nName">
-                </div>
+                    <input type="text" id="company_name1" class="form-control" aria-describedby="passwordHelpInline"
+                        placeholder="enter company Name">
+                </div> 
                 <div class="col-2">
-                    <input type="number" id="year" class="form-control" aria-describedby="passwordHelpInline"
+                    <input type="number" id="year2" class="form-control" aria-describedby="passwordHelpInline"
                         placeholder="enter Year">
-                </div>
+                </div> 
                 <div class="col-3">
-                    <button onclick="addMultiValue('project','title','company_name','year')">Add</button>
+                    <button onclick="addMultiValue('project','title','company_name1','year2')">Add</button>
                 </div>
             </div>
 
@@ -299,7 +302,7 @@
             </div>
 
 
-            <input class="btn btn-primary" type="text" onclick="createresume()" value="Submit" id="submit">
+            <input class="btn btn-primary" type="text" onclick="createResume()" value="Submit" id="submit">
 
 
 
@@ -317,7 +320,13 @@
             <code id="output"></code>
         </section>
         
-        <script src="resume.js" type="module"></script>
+       
+
+        <script>
+            setTimeout(() => {
+                display()
+            }, 2000);
+        </script>
 </body>
 
 
